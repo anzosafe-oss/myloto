@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#131920"><meta name="apple-mobile-web-app-title" content="MyLoto"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="./icons/dark-180.png" id="ios-icon"><title>MyLoto · Experimental Lab</title><style>
+<html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover"><meta name="myloto-version" content="1.0.6"><meta name="theme-color" content="#131920"><meta name="apple-mobile-web-app-title" content="MyLoto"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="./icons/dark-180.png" id="ios-icon"><title>MyLoto · Experimental Lab</title><style>
 :root{color-scheme:dark;--bg:#101419;--surface:#171e25;--panel:#1d2630;--line:#2b3744;--text:#edf2f7;--muted:#a8b7c7;--accent:#aee88a;--ink:#152514;--warn:#f0c77a}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px system-ui,sans-serif}header{position:sticky;top:0;z-index:4;background:#131920;border-bottom:1px solid var(--line)}.top,.nav,main,footer{max-width:1240px;margin:auto;padding-inline:clamp(12px,3vw,36px)}.top{display:flex;align-items:center;justify-content:space-between;padding-block:14px;gap:10px}.logo{display:flex;align-items:center;gap:12px}.mark{display:grid;place-items:center;border-radius:12px;background:var(--accent);color:var(--ink);width:40px;height:40px;font-size:18px;font-weight:850}.brand{font-size:21px;font-weight:750}.subtitle,.eyebrow,small,.muted{color:var(--muted)}.subtitle{font-size:12px}.nav{display:flex;gap:6px;overflow:auto;scrollbar-width:thin;padding-bottom:8px}button,input,select{font:inherit;border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--text);padding:9px 12px;min-height:41px}button{cursor:pointer;font-weight:650}button:hover:not(:disabled){border-color:var(--accent)}button:disabled{opacity:.45;cursor:default}.nav button{white-space:nowrap;background:transparent;border-color:transparent}.nav button[aria-current="page"]{color:var(--accent);background:#26352b}.primary{background:var(--accent);color:var(--ink);border-color:transparent}input[type=checkbox]{min-height:auto;accent-color:var(--accent)}main{padding-block:26px;min-height:65vh}footer{padding-block:20px;border-top:1px solid var(--line);color:var(--muted)}h1,h2,h3,p{margin:0}h1{font-size:clamp(29px,5vw,46px);letter-spacing:-.045em}h2{font-size:20px}h3{font-size:16px}p{line-height:1.5}.intro{margin-bottom:20px}.intro p{margin-top:7px;color:var(--muted)}.stack{display:grid;gap:15px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr));gap:12px}.wide{grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr))}.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}.hero{background:linear-gradient(115deg,#25352d 0%,#171e25 80%)}.hero .balls{margin:18px 0}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.metric{font-size:24px;font-weight:750;margin-top:5px}.actions{display:flex;align-items:end;flex-wrap:wrap;gap:8px}.actions label{display:grid;gap:4px;max-width:100%}input,select{max-width:100%;min-width:0}label{color:var(--muted)}.balls{display:inline-flex;gap:5px;flex-wrap:wrap;vertical-align:middle}.ball{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#2f4336;color:#dbf4d7;border:1px solid #55785d;font-weight:750;font-variant-numeric:tabular-nums}.ball:nth-child(6){background:#344257;border-color:#6583a1;color:#e5f1ff}.banner{margin-bottom:14px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;color:var(--muted)}.warning{color:var(--warn)}.scroll{overflow:auto}.scroll table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap;font-variant-numeric:tabular-nums}th,td{padding:9px 10px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:650}.chart{display:flex;align-items:end;gap:2px;height:146px;margin:10px 0;min-width:510px}.chart button{height:var(--h);min-height:2px;flex:1;padding:0;position:relative;border:0;border-radius:3px;background:#72af78;margin-bottom:19px}.chart button span{position:absolute;bottom:-19px;left:50%;transform:translateX(-50%);font-size:9px;font-weight:normal}.matrix{display:grid;grid-template-columns:repeat(40,14px);width:max-content;margin:10px 0}.matrix button{width:14px;height:14px;min-height:0;padding:0;border-radius:0;border:1px solid #121c20;background:rgb(calc(25 + var(--v)*110) calc(40 + var(--v)*170) calc(44 + var(--v)*80))}.listline{display:flex;justify-content:space-between;align-items:center;gap:8px}.chips{display:flex;gap:8px;flex-wrap:wrap}.chips label{display:flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:8px;padding:5px 8px}progress{width:100%;accent-color:var(--accent)}a{color:var(--accent)}details{margin-top:10px}summary{cursor:pointer}svg{width:100%;min-width:340px;height:200px}fieldset{border:1px solid var(--line);border-radius:10px}#message:empty{display:none}@media(max-width:550px){.top{align-items:start}.top small{max-width:125px;text-align:right}.card{padding:12px}.actions>*{min-width:0}.nav{gap:0}.nav button{padding:7px 10px}.ball{width:27px;height:27px}}
 header{padding-top:env(safe-area-inset-top)}footer{padding-bottom:max(20px,env(safe-area-inset-bottom))}[hidden]{display:none!important}
 :root{--safe-top:env(safe-area-inset-top,0px);--safe-bottom:env(safe-area-inset-bottom,0px);--header-height:116px}
@@ -61,7 +61,12 @@ input:not([type=checkbox]),select,textarea{font-size:16px}
 }
 #refreshToast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:14;width:max-content;max-width:calc(100vw - 32px);padding:10px 16px;border-radius:10px;background:var(--accent);color:var(--ink);font-size:13px;font-weight:700;box-shadow:0 4px 20px #0004}
 @media(max-width:760px){#refreshToast{bottom:calc(var(--bottom-nav-height) + var(--safe-bottom) + 14px)}}
-</style></head><body><header><div class="top"><div class="logo"><img class="mark" src="./icons/favicon-64.png" width="40" height="40" alt=""><div><div class="brand">MyLoto</div><div class="subtitle">Experimental Lab</div></div></div><div class="actions"><button id="logout" data-action="logout" hidden>Ieși</button></div></div><nav class="nav" id="nav" aria-label="Navigare"></nav></header><div id="refreshIndicator" role="status" hidden></div><div id="refreshToast" role="status" hidden></div><main><div id="message" class="banner" role="status"></div><div id="root"></div></main><footer>MyLoto v1.0.5</footer><nav id="mobileNav" aria-label="Navigare mobilă" hidden></nav><script>
+.prediction-day{margin-top:8px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.prediction-day summary{padding:11px 12px;font-weight:700}
+.prediction-day[open] summary{border-bottom:1px solid var(--line)}
+.prediction-day .scroll{padding:0 10px}
+.prediction-day summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style></head><body><header><div class="top"><div class="logo"><img class="mark" src="./icons/favicon-64.png" width="40" height="40" alt=""><div><div class="brand">MyLoto</div><div class="subtitle">Experimental Lab</div></div></div><div class="actions"><button id="logout" data-action="logout" hidden>Ieși</button></div></div><nav class="nav" id="nav" aria-label="Navigare"></nav></header><div id="refreshIndicator" role="status" hidden></div><div id="refreshToast" role="status" hidden></div><main><div id="message" class="banner" role="status"></div><div id="root"></div></main><footer>MyLoto v1.0.6</footer><nav id="mobileNav" aria-label="Navigare mobilă" hidden></nav><script>
 const numbers=Array.from({length:40},(_,i)=>i+1), seed=4052026;
 const methods=[
 ['Aleatoriu uniform','Eșantion uniform fără înlocuire.','Seed 4052026 + data'],
@@ -388,11 +393,29 @@ function home(){
  '<div class="grid">'+metric('Extrageri valide',state.valid.length)+metric('Algoritmi activi',supported().length)+metric('Predicții evaluate',state.predictions.filter(p=>p.status==='Evaluată').length)+metric('Lider observat',lead?lead.id:'Date prospective insuficiente')+'</div>'+
  (state.excluded.length?card('<h2>Extrageri excluse</h2>'+table(['ID','Data','Motiv'],state.excluded.map(r=>[esc(r.id),fmt(r.date),esc(r.reason)]))):'')+'</div>';
 }
+const openPredictionDays=new Set();
+function predictionHistory(){
+ const grouped=new Map();
+ for(const prediction of state.predictions){
+  if(!grouped.has(prediction.date))grouped.set(prediction.date,[]);
+  grouped.get(prediction.date).push(prediction);
+ }
+ if(!grouped.size)return '<p class="muted">Nu ai încă predicții salvate.</p>';
+ return [...grouped.keys()].sort().reverse().map(date=>{
+  const rows=grouped.get(date).map(p=>[esc(p.id),balls(p.n),esc(p.status),esc(p.m5??'—')+' / '+esc(p.m6??'—'),esc(p.notes)]);
+  return '<details class="prediction-day" data-prediction-day="'+esc(date)+'" '+(openPredictionDays.has(date)?'open':'')+'><summary>Predicții '+fmt(date)+'</summary>'+table(['Algoritm','Combinație','Status','5 / 6','Observații'],rows)+'</details>';
+ }).join('');
+}
+document.addEventListener('toggle',event=>{
+ const details=event.target,date=details.dataset?.predictionDay;
+ if(!date||!details.isConnected)return;
+ if(details.open)openPredictionDays.add(date);else openPredictionDays.delete(date);
+},true);
 function predictions(){
  return header('Predicții','Poți genera inclusiv pentru azi. Predicțiile experimentale se salvează până în ziua anterioară extragerii.')+'<div class="stack">'+card('<form class="actions" id="generate" novalidate><label>Data extragerii<input type="date" name="date" min="'+today()+'" value="'+esc(state.target||official()||today())+'" required></label><label>Algoritm<select name="algorithm"><option value="all">Toți algoritmii activi</option>'+supported().map(m=>'<option value="'+m.id+'" '+(state.algorithm===m.id?'selected':'')+'>'+m.id+' · '+m.name+'</option>').join('')+'</select></label><button type="button" class="primary" data-action="generate">Generează</button><button type="button" data-action="evaluate" '+(!state.historySynced?'disabled':'')+'>Evaluează predicțiile</button></form>')+
  (state.draft.length?card('<div id="generated" tabindex="-1" class="listline"><h2>Combinații pentru '+fmt(state.target)+'</h2><button data-action="saveP" '+(!state.historySynced||state.target<=today()?'disabled':'')+'>Salvează în Supabase</button></div>'+(state.target===today()?'<p class="muted">Combinație pentru azi, fără înregistrare în experiment.</p>':'')+table(['Algoritm','Combinație'],state.draft.map(p=>[p.id,balls(p.n)]))):'')+
  card('<h2>Bilete jucate</h2><form id="saveTicket" class="actions"><label>Data extragerii<input type="date" name="date" value="'+esc(last()?.date||today())+'" required></label><label>Cele cinci numere<input name="n" inputmode="text" placeholder="Ex. 1, 4, 5, 7, 9" required></label><button '+(!state.historySynced?'disabled':'')+'>Salvează biletul</button></form>'+(state.tickets.length?table(['Data','Combinație','Status','5 / 6','Observații'],state.tickets.slice().reverse().map(t=>[fmt(t.date),balls(t.n),esc(t.status),esc(t.m5??'—')+' / '+esc(t.m6??'—'),esc(t.notes)])):'<p class="muted">Poți salva și bilete din extrageri trecute.</p>'))+
- card('<h2>Istoric predicții</h2>'+table(['Data','Algoritm','Combinație','Status','5 / 6','Observații'],state.predictions.slice().reverse().map(p=>[fmt(p.date),esc(p.id),balls(p.n),esc(p.status),esc(p.m5??'—')+' / '+esc(p.m6??'—'),esc(p.notes)])))+'</div>';
+ card('<h2>Istoric predicții</h2>'+predictionHistory())+'</div>';
 }
 function draws(){
  const f=state.fx,n=f.q.trim().split(/[ ,]+/).filter(Boolean).map(Number);
@@ -475,7 +498,7 @@ document.addEventListener('click',async e=>{
  if(a==='logout'){
  const access=session?.access_token;
  saveSession(null);
- state.valid=[];state.excluded=[];state.drawsSynced=false;state.draft=[];state.result=null;state.predictions=[];state.tickets=[];state.saved=[];state.historySynced=false;state.tab=0;
+ state.valid=[];state.excluded=[];state.drawsSynced=false;state.draft=[];state.result=null;state.predictions=[];state.tickets=[];state.saved=[];state.historySynced=false;state.tab=0;openPredictionDays.clear();
  render();flash('');
  if(access)await api('/auth/v1/logout?scope=local',{method:'POST',access}).catch(()=>{});
  }
@@ -536,12 +559,40 @@ function refreshToast(message=''){
  node.textContent=message;node.hidden=!message;
  if(message)refreshToastTimer=setTimeout(()=>refreshToast(),2000);
 }
+const appVersion=$('meta[name="myloto-version"]').content;
+const appReloadKey='myloto.refresh-state.v1';
+function newerVersion(candidate,current){
+ const valid=/^\d+\.\d+\.\d+$/;
+ if(!valid.test(candidate||'')||!valid.test(current||''))return false;
+ const next=candidate.split('.').map(Number),old=current.split('.').map(Number);
+ const changed=next.findIndex((n,i)=>n!==old[i]);
+ return changed>=0&&next[changed]>old[changed];
+}
+async function updateAppIfAvailable(){
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),5000);
+ try{
+ const url=new URL(location.href);url.hash='';url.searchParams.delete('_app');url.searchParams.delete('_reload');url.searchParams.set('_updateCheck',String(Date.now()));
+ const response=await fetch(url.href,{cache:'no-store',signal:controller.signal});
+ if(!response.ok)return false;
+ const latest=new DOMParser().parseFromString(await response.text(),'text/html').querySelector('meta[name="myloto-version"]')?.content;
+ if(!newerVersion(latest,appVersion))return false;
+ const target=new URL(location.href);
+ if(target.searchParams.get('_app')===latest)return false;
+ try{sessionStorage.setItem(appReloadKey,JSON.stringify({tab:state.tab,openDays:[...openPredictionDays],userId:session?.user?.id,at:Date.now()}));}catch{}
+ target.searchParams.delete('_updateCheck');target.searchParams.set('_app',latest);target.searchParams.set('_reload',String(Date.now()));
+ indicator('Se încarcă noua versiune…');
+ location.replace(target.href);return true;
+ }catch{return false;}finally{clearTimeout(timer);}
+}
 async function refreshData(){
  if(!session||state.refreshing||state.busy)return;
  refreshToast();flash('');
  state.refreshing=true;indicator('Se actualizează…');
- try{if(await refresh()&&state.historySynced)refreshToast('Actualizat');}
- finally{state.refreshing=false;indicator();}
+ let loadingUpdate=false;
+ try{
+ loadingUpdate=await updateAppIfAvailable();
+ if(!loadingUpdate&&await refresh()&&state.historySynced)refreshToast('Actualizat');
+ }finally{if(!loadingUpdate){state.refreshing=false;indicator();}}
 }
 function resetPull(){
  pullStart=null;pullDistance=0;if(!state.refreshing)indicator();
@@ -567,5 +618,13 @@ document.addEventListener('touchend',()=>{
  resetPull();if(ready)refreshData();
 },{passive:true});
 document.addEventListener('touchcancel',resetPull,{passive:true});
+try{
+ const previous=JSON.parse(sessionStorage.getItem(appReloadKey)||'null');
+ sessionStorage.removeItem(appReloadKey);
+ if(session?.user?.id&&previous?.userId===session.user.id&&Date.now()-previous.at<60000){
+  if(Number.isInteger(previous.tab)&&previous.tab>=0&&previous.tab<tabs.length)state.tab=previous.tab;
+  for(const date of previous.openDays||[])openPredictionDays.add(date);
+ }
+}catch{}
 render();if(session)refresh();
 </script></body></html>
