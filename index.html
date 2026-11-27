@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover"><meta name="myloto-version" content="1.0.6"><meta name="theme-color" content="#131920"><meta name="apple-mobile-web-app-title" content="MyLoto"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="./icons/dark-180.png" id="ios-icon"><title>MyLoto · Experimental Lab</title><style>
+<html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover"><meta name="myloto-version" content="1.0.7"><meta name="theme-color" content="#131920"><meta name="apple-mobile-web-app-title" content="MyLoto"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="./icons/dark-180.png" id="ios-icon"><title>MyLoto · Experimental Lab</title><style>
 :root{color-scheme:dark;--bg:#101419;--surface:#171e25;--panel:#1d2630;--line:#2b3744;--text:#edf2f7;--muted:#a8b7c7;--accent:#aee88a;--ink:#152514;--warn:#f0c77a}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px system-ui,sans-serif}header{position:sticky;top:0;z-index:4;background:#131920;border-bottom:1px solid var(--line)}.top,.nav,main,footer{max-width:1240px;margin:auto;padding-inline:clamp(12px,3vw,36px)}.top{display:flex;align-items:center;justify-content:space-between;padding-block:14px;gap:10px}.logo{display:flex;align-items:center;gap:12px}.mark{display:grid;place-items:center;border-radius:12px;background:var(--accent);color:var(--ink);width:40px;height:40px;font-size:18px;font-weight:850}.brand{font-size:21px;font-weight:750}.subtitle,.eyebrow,small,.muted{color:var(--muted)}.subtitle{font-size:12px}.nav{display:flex;gap:6px;overflow:auto;scrollbar-width:thin;padding-bottom:8px}button,input,select{font:inherit;border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--text);padding:9px 12px;min-height:41px}button{cursor:pointer;font-weight:650}button:hover:not(:disabled){border-color:var(--accent)}button:disabled{opacity:.45;cursor:default}.nav button{white-space:nowrap;background:transparent;border-color:transparent}.nav button[aria-current="page"]{color:var(--accent);background:#26352b}.primary{background:var(--accent);color:var(--ink);border-color:transparent}input[type=checkbox]{min-height:auto;accent-color:var(--accent)}main{padding-block:26px;min-height:65vh}footer{padding-block:20px;border-top:1px solid var(--line);color:var(--muted)}h1,h2,h3,p{margin:0}h1{font-size:clamp(29px,5vw,46px);letter-spacing:-.045em}h2{font-size:20px}h3{font-size:16px}p{line-height:1.5}.intro{margin-bottom:20px}.intro p{margin-top:7px;color:var(--muted)}.stack{display:grid;gap:15px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr));gap:12px}.wide{grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr))}.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}.hero{background:linear-gradient(115deg,#25352d 0%,#171e25 80%)}.hero .balls{margin:18px 0}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.metric{font-size:24px;font-weight:750;margin-top:5px}.actions{display:flex;align-items:end;flex-wrap:wrap;gap:8px}.actions label{display:grid;gap:4px;max-width:100%}input,select{max-width:100%;min-width:0}label{color:var(--muted)}.balls{display:inline-flex;gap:5px;flex-wrap:wrap;vertical-align:middle}.ball{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#2f4336;color:#dbf4d7;border:1px solid #55785d;font-weight:750;font-variant-numeric:tabular-nums}.ball:nth-child(6){background:#344257;border-color:#6583a1;color:#e5f1ff}.banner{margin-bottom:14px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;color:var(--muted)}.warning{color:var(--warn)}.scroll{overflow:auto}.scroll table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap;font-variant-numeric:tabular-nums}th,td{padding:9px 10px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:650}.chart{display:flex;align-items:end;gap:2px;height:146px;margin:10px 0;min-width:510px}.chart button{height:var(--h);min-height:2px;flex:1;padding:0;position:relative;border:0;border-radius:3px;background:#72af78;margin-bottom:19px}.chart button span{position:absolute;bottom:-19px;left:50%;transform:translateX(-50%);font-size:9px;font-weight:normal}.matrix{display:grid;grid-template-columns:repeat(40,14px);width:max-content;margin:10px 0}.matrix button{width:14px;height:14px;min-height:0;padding:0;border-radius:0;border:1px solid #121c20;background:rgb(calc(25 + var(--v)*110) calc(40 + var(--v)*170) calc(44 + var(--v)*80))}.listline{display:flex;justify-content:space-between;align-items:center;gap:8px}.chips{display:flex;gap:8px;flex-wrap:wrap}.chips label{display:flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:8px;padding:5px 8px}progress{width:100%;accent-color:var(--accent)}a{color:var(--accent)}details{margin-top:10px}summary{cursor:pointer}svg{width:100%;min-width:340px;height:200px}fieldset{border:1px solid var(--line);border-radius:10px}#message:empty{display:none}@media(max-width:550px){.top{align-items:start}.top small{max-width:125px;text-align:right}.card{padding:12px}.actions>*{min-width:0}.nav{gap:0}.nav button{padding:7px 10px}.ball{width:27px;height:27px}}
 header{padding-top:env(safe-area-inset-top)}footer{padding-bottom:max(20px,env(safe-area-inset-bottom))}[hidden]{display:none!important}
 :root{--safe-top:env(safe-area-inset-top,0px);--safe-bottom:env(safe-area-inset-bottom,0px);--header-height:116px}
@@ -66,7 +66,10 @@ input:not([type=checkbox]),select,textarea{font-size:16px}
 .prediction-day[open] summary{border-bottom:1px solid var(--line)}
 .prediction-day .scroll{padding:0 10px}
 .prediction-day summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-</style></head><body><header><div class="top"><div class="logo"><img class="mark" src="./icons/favicon-64.png" width="40" height="40" alt=""><div><div class="brand">MyLoto</div><div class="subtitle">Experimental Lab</div></div></div><div class="actions"><button id="logout" data-action="logout" hidden>Ieși</button></div></div><nav class="nav" id="nav" aria-label="Navigare"></nav></header><div id="refreshIndicator" role="status" hidden></div><div id="refreshToast" role="status" hidden></div><main><div id="message" class="banner" role="status"></div><div id="root"></div></main><footer>MyLoto v1.0.6</footer><nav id="mobileNav" aria-label="Navigare mobilă" hidden></nav><script>
+.ticket-variant label{width:100%}
+.ticket-history{border-top:1px solid var(--line);padding-top:12px;margin-top:14px}
+.ticket-history h3{margin-bottom:5px}
+</style></head><body><header><div class="top"><div class="logo"><img class="mark" src="./icons/favicon-64.png" width="40" height="40" alt=""><div><div class="brand">MyLoto</div><div class="subtitle">Experimental Lab</div></div></div><div class="actions"><button id="logout" data-action="logout" hidden>Ieși</button></div></div><nav class="nav" id="nav" aria-label="Navigare"></nav></header><div id="refreshIndicator" role="status" hidden></div><div id="refreshToast" role="status" hidden></div><main><div id="message" class="banner" role="status"></div><div id="root"></div></main><footer>MyLoto v1.0.7</footer><nav id="mobileNav" aria-label="Navigare mobilă" hidden></nav><script>
 const numbers=Array.from({length:40},(_,i)=>i+1), seed=4052026;
 const methods=[
 ['Aleatoriu uniform','Eșantion uniform fără înlocuire.','Seed 4052026 + data'],
@@ -306,7 +309,7 @@ async function refresh(){
  const access=await token();
  const [predictions,tickets,tests]=await Promise.all([
   readHistory('predictions','id,date,algorithm,n,version,created_at',access),
-  readHistory('tickets','id,date,n,created_at',access),
+  readHistory('tickets','id,date,n,created_at,ticket_group,variant',access),
   readHistory('backtests','id,result,created_at',access)
  ]);
  state.predictions=predictions.map(p=>({...p,...outcome(p.date,p.n),id:p.algorithm}));
@@ -342,9 +345,7 @@ async function write(action,data){
  path='predictions';message='Predicțiile au fost salvate în Supabase.';
  }
  if(action==='saveTicket'){
- const n=data.n.trim().split(/[ ,;]+/).map(Number);
- if(!data.date||n.length!==5||new Set(n).size!==5||n.some(x=>!Number.isInteger(x)||x<1||x>40))throw Error('Alege data și introdu cinci numere distincte între 1 și 40.');
- path='tickets';body={date:data.date,n};message='Biletul a fost salvat în Supabase.';
+ path='tickets';body=ticketPayload(data);message='Biletul a fost salvat în Supabase.';
  }
  if(action==='saveBacktest'){path='backtests';body={result:data};message='Backtesting-ul a fost salvat în Supabase.';}
  if(!path)throw Error('Operațiune indisponibilă.');
@@ -411,10 +412,52 @@ document.addEventListener('toggle',event=>{
  if(!date||!details.isConnected)return;
  if(details.open)openPredictionDays.add(date);else openPredictionDays.delete(date);
 },true);
+const ticketVariants=['A','B','C','D'];
+function ticketPayload(data){
+ if(!data.date)throw Error('Alege data extragerii.');
+ const rows=ticketVariants.filter(variant=>Object.hasOwn(data,'n'+variant)).map(variant=>{
+  const n=data['n'+variant].trim().split(/[ ,;]+/).map(Number);
+  if(n.length!==5||new Set(n).size!==5||n.some(x=>!Number.isInteger(x)||x<1||x>40))throw Error('Varianta '+variant+' trebuie să conțină cinci numere distincte între 1 și 40.');
+  return {date:data.date,ticket_group:data.ticketGroup,variant,n};
+ });
+ if(!rows.length||rows[0].variant!=='A')throw Error('Introdu cel puțin varianta A.');
+ return rows;
+}
+function ticketHistory(){
+ const groups=new Map();
+ for(const ticket of state.tickets.slice().reverse()){
+  const key=ticket.date+'|'+(ticket.ticket_group||ticket.id);
+  if(!groups.has(key))groups.set(key,[]);
+  groups.get(key).push(ticket);
+ }
+ if(!groups.size)return '<p class="muted">Poți salva și bilete din extrageri trecute.</p>';
+ return [...groups.values()].map(rows=>'<div class="ticket-history"><h3>Bilet · '+fmt(rows[0].date)+'</h3>'+table(['Variantă','Combinație','Status','5 / 6','Observații'],rows.sort((a,b)=>(a.variant||'A').localeCompare(b.variant||'A')).map(t=>[esc(t.variant||'A'),balls(t.n),esc(t.status),esc(t.m5??'—')+' / '+esc(t.m6??'—'),esc(t.notes)]))+'</div>').join('');
+}
+function ticketForm(){
+ return '<form id="saveTicket" class="stack"><div class="actions"><label>Data extragerii<input type="date" name="date" value="'+esc(last()?.date||today())+'" required></label></div>'+
+ ticketVariants.map((v,i)=>'<div class="actions ticket-variant" data-variant="'+v+'" '+(i?'hidden':'')+'><label>Varianta '+v+'<input name="n'+v+'" placeholder="Cinci numere separate prin spațiu sau virgulă" required '+(i?'disabled':'')+'></label></div>').join('')+
+ '<div class="actions"><button type="button" data-action="addTicketVariant">Adaugă varianta B</button><button type="button" data-action="removeTicketVariant" hidden>Elimină ultima variantă</button><button class="primary" '+(!state.historySynced?'disabled':'')+'>Salvează biletul</button></div></form>';
+}
+function changeTicketVariants(action){
+ const form=$('#saveTicket');
+ const rows=[...form.querySelectorAll('.ticket-variant')];
+ let count=rows.filter(row=>!row.hidden).length;
+ if(action==='addTicketVariant'&&count<rows.length){
+  const row=rows[count++],input=row.querySelector('input');
+  row.hidden=false;input.disabled=false;input.focus();
+ }else if(action==='removeTicketVariant'&&count>1){
+  const row=rows[--count],input=row.querySelector('input');
+  row.hidden=true;input.disabled=true;input.value='';
+ }
+ const add=form.querySelector('[data-action=addTicketVariant]');
+ add.hidden=count===rows.length;
+ if(!add.hidden)add.textContent='Adaugă varianta '+ticketVariants[count];
+ form.querySelector('[data-action=removeTicketVariant]').hidden=count===1;
+}
 function predictions(){
  return header('Predicții','Poți genera inclusiv pentru azi. Predicțiile experimentale se salvează până în ziua anterioară extragerii.')+'<div class="stack">'+card('<form class="actions" id="generate" novalidate><label>Data extragerii<input type="date" name="date" min="'+today()+'" value="'+esc(state.target||official()||today())+'" required></label><label>Algoritm<select name="algorithm"><option value="all">Toți algoritmii activi</option>'+supported().map(m=>'<option value="'+m.id+'" '+(state.algorithm===m.id?'selected':'')+'>'+m.id+' · '+m.name+'</option>').join('')+'</select></label><button type="button" class="primary" data-action="generate">Generează</button><button type="button" data-action="evaluate" '+(!state.historySynced?'disabled':'')+'>Evaluează predicțiile</button></form>')+
  (state.draft.length?card('<div id="generated" tabindex="-1" class="listline"><h2>Combinații pentru '+fmt(state.target)+'</h2><button data-action="saveP" '+(!state.historySynced||state.target<=today()?'disabled':'')+'>Salvează în Supabase</button></div>'+(state.target===today()?'<p class="muted">Combinație pentru azi, fără înregistrare în experiment.</p>':'')+table(['Algoritm','Combinație'],state.draft.map(p=>[p.id,balls(p.n)]))):'')+
- card('<h2>Bilete jucate</h2><form id="saveTicket" class="actions"><label>Data extragerii<input type="date" name="date" value="'+esc(last()?.date||today())+'" required></label><label>Cele cinci numere<input name="n" inputmode="text" placeholder="Ex. 1, 4, 5, 7, 9" required></label><button '+(!state.historySynced?'disabled':'')+'>Salvează biletul</button></form>'+(state.tickets.length?table(['Data','Combinație','Status','5 / 6','Observații'],state.tickets.slice().reverse().map(t=>[fmt(t.date),balls(t.n),esc(t.status),esc(t.m5??'—')+' / '+esc(t.m6??'—'),esc(t.notes)])):'<p class="muted">Poți salva și bilete din extrageri trecute.</p>'))+
+ card('<h2>Bilete jucate</h2>'+ticketForm()+ticketHistory())+
  card('<h2>Istoric predicții</h2>'+predictionHistory())+'</div>';
 }
 function draws(){
@@ -494,6 +537,7 @@ document.addEventListener('click',async e=>{
  const a=b.dataset.action;if(!a)return;
  try{
  if(a==='more'){state.more=!state.more;renderMobileNav();$('#mobileNav [data-action=more]')?.focus();return;}
+ if(a==='addTicketVariant'||a==='removeTicketVariant'){changeTicketVariants(a);return;}
  if(a==='generate')generate($('#generate'));
  if(a==='logout'){
  const access=session?.access_token;
@@ -531,7 +575,12 @@ document.addEventListener('submit',async e=>{
  finally{button.disabled=false;}
  }
  if(id==='generate')generate(e.target);
- if(id==='saveTicket'){const button=e.target.querySelector('button');button.disabled=true;try{await write('saveTicket',data);}finally{button.disabled=!state.historySynced;}}
+ if(id==='saveTicket'){
+ const form=e.target,button=form.querySelector('button[type=submit],button.primary');
+ button.disabled=true;
+ try{form.dataset.ticketGroup??=crypto.randomUUID();await write('saveTicket',{...data,ticketGroup:form.dataset.ticketGroup});}
+ finally{button.disabled=!state.historySynced;}
+ }
  if(id==='nextForm')await write('setNext',data);
  if(id==='addDraw'){const button=e.target.querySelector('button');button.disabled=true;try{await write('addDraw',{...data,n:data.n.trim().split(/[ ,]+/).map(Number)});}finally{button.disabled=!state.drawsSynced;}}
  if(id==='test'){
