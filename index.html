@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#131920"><meta name="apple-mobile-web-app-title" content="MyLoto"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="./icons/dark-180.png" id="ios-icon"><title>MyLoto · Experimental Lab</title><style>
 :root{color-scheme:dark;--bg:#101419;--surface:#171e25;--panel:#1d2630;--line:#2b3744;--text:#edf2f7;--muted:#a8b7c7;--accent:#aee88a;--ink:#152514;--warn:#f0c77a}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px system-ui,sans-serif}header{position:sticky;top:0;z-index:4;background:#131920;border-bottom:1px solid var(--line)}.top,.nav,main,footer{max-width:1240px;margin:auto;padding-inline:clamp(12px,3vw,36px)}.top{display:flex;align-items:center;justify-content:space-between;padding-block:14px;gap:10px}.logo{display:flex;align-items:center;gap:12px}.mark{display:grid;place-items:center;border-radius:12px;background:var(--accent);color:var(--ink);width:40px;height:40px;font-size:18px;font-weight:850}.brand{font-size:21px;font-weight:750}.subtitle,.eyebrow,small,.muted{color:var(--muted)}.subtitle{font-size:12px}.nav{display:flex;gap:6px;overflow:auto;scrollbar-width:thin;padding-bottom:8px}button,input,select{font:inherit;border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--text);padding:9px 12px;min-height:41px}button{cursor:pointer;font-weight:650}button:hover:not(:disabled){border-color:var(--accent)}button:disabled{opacity:.45;cursor:default}.nav button{white-space:nowrap;background:transparent;border-color:transparent}.nav button[aria-current="page"]{color:var(--accent);background:#26352b}.primary{background:var(--accent);color:var(--ink);border-color:transparent}input[type=checkbox]{min-height:auto;accent-color:var(--accent)}main{padding-block:26px;min-height:65vh}footer{padding-block:20px;border-top:1px solid var(--line);color:var(--muted)}h1,h2,h3,p{margin:0}h1{font-size:clamp(29px,5vw,46px);letter-spacing:-.045em}h2{font-size:20px}h3{font-size:16px}p{line-height:1.5}.intro{margin-bottom:20px}.intro p{margin-top:7px;color:var(--muted)}.stack{display:grid;gap:15px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr));gap:12px}.wide{grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr))}.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}.hero{background:linear-gradient(115deg,#25352d 0%,#171e25 80%)}.hero .balls{margin:18px 0}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.metric{font-size:24px;font-weight:750;margin-top:5px}.actions{display:flex;align-items:end;flex-wrap:wrap;gap:8px}.actions label{display:grid;gap:4px;max-width:100%}input,select{max-width:100%;min-width:0}label{color:var(--muted)}.balls{display:inline-flex;gap:5px;flex-wrap:wrap;vertical-align:middle}.ball{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#2f4336;color:#dbf4d7;border:1px solid #55785d;font-weight:750;font-variant-numeric:tabular-nums}.ball:nth-child(6){background:#344257;border-color:#6583a1;color:#e5f1ff}.banner{margin-bottom:14px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;color:var(--muted)}.warning{color:var(--warn)}.scroll{overflow:auto}.scroll table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap;font-variant-numeric:tabular-nums}th,td{padding:9px 10px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:650}.chart{display:flex;align-items:end;gap:2px;height:146px;margin:10px 0;min-width:510px}.chart button{height:var(--h);min-height:2px;flex:1;padding:0;position:relative;border:0;border-radius:3px;background:#72af78;margin-bottom:19px}.chart button span{position:absolute;bottom:-19px;left:50%;transform:translateX(-50%);font-size:9px;font-weight:normal}.matrix{display:grid;grid-template-columns:repeat(40,14px);width:max-content;margin:10px 0}.matrix button{width:14px;height:14px;min-height:0;padding:0;border-radius:0;border:1px solid #121c20;background:rgb(calc(25 + var(--v)*110) calc(40 + var(--v)*170) calc(44 + var(--v)*80))}.listline{display:flex;justify-content:space-between;align-items:center;gap:8px}.chips{display:flex;gap:8px;flex-wrap:wrap}.chips label{display:flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:8px;padding:5px 8px}progress{width:100%;accent-color:var(--accent)}a{color:var(--accent)}details{margin-top:10px}summary{cursor:pointer}svg{width:100%;min-width:340px;height:200px}fieldset{border:1px solid var(--line);border-radius:10px}#message:empty{display:none}@media(max-width:550px){.top{align-items:start}.top small{max-width:125px;text-align:right}.card{padding:12px}.actions>*{min-width:0}.nav{gap:0}.nav button{padding:7px 10px}.ball{width:27px;height:27px}}
-header{padding-top:env(safe-area-inset-top)}footer{padding-bottom:max(20px,env(safe-area-inset-bottom))}[hidden]{display:none!important}</style></head><body><header><div class="top"><div class="logo"><img class="mark" src="./icons/favicon-64.png" width="40" height="40" alt=""><div><div class="brand">MyLoto</div><div class="subtitle">Experimental Lab</div></div></div><div class="actions"><small id="connection"></small><button id="logout" data-action="logout" hidden>Ieși</button></div></div><nav class="nav" id="nav" aria-label="Navigare"></nav></header><main><div id="message" class="banner" role="status"></div><div id="root"></div></main><footer>MyLoto v1.0.2 · Europe/Bucharest</footer><script>
+header{padding-top:env(safe-area-inset-top)}footer{padding-bottom:max(20px,env(safe-area-inset-bottom))}[hidden]{display:none!important}</style></head><body><header><div class="top"><div class="logo"><img class="mark" src="./icons/favicon-64.png" width="40" height="40" alt=""><div><div class="brand">MyLoto</div><div class="subtitle">Experimental Lab</div></div></div><div class="actions"><small id="connection"></small><button id="logout" data-action="logout" hidden>Ieși</button></div></div><nav class="nav" id="nav" aria-label="Navigare"></nav></header><main><div id="message" class="banner" role="status"></div><div id="root"></div></main><footer>MyLoto v1.0.3 · Europe/Bucharest</footer><script>
 const numbers=Array.from({length:40},(_,i)=>i+1), seed=4052026;
 const methods=[
 ['Aleatoriu uniform','Eșantion uniform fără înlocuire.','Seed 4052026 + data'],
@@ -169,7 +169,7 @@ const dec=(x,k=3)=>x==null?'—':x.toFixed(k);
 const balls=a=>'<span class="balls">'+a.map(n=>'<span class="ball">'+esc(n)+'</span>').join('')+'</span>';
 const table=(head,body)=>'<div class="scroll"><table><thead><tr>'+head.map(x=>'<th scope="col">'+x+'</th>').join('')+'</tr></thead><tbody>'+body.map(row=>'<tr>'+row.map(x=>'<td>'+x+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
 const init=validate(snapshot.draws);
-let state={...init,predictions:snapshot.predictions,active:Object.fromEntries(methods.map(m=>[m.id,true])),saved:[],next:snapshot.next||'',sync:false,drawsSynced:false,tab:0,result:snapshot.result||null,busy:false,draft:[],fx:{year:'',month:'',type:'',q:''},page:0,window:0,metric:6,rankFrom:'',rankTo:'',rankScore:1};
+let state={...init,predictions:snapshot.predictions,active:Object.fromEntries(methods.map(m=>[m.id,true])),saved:[],tickets:[],historySynced:false,next:snapshot.next||'',sync:false,drawsSynced:false,tab:0,result:snapshot.result||null,busy:false,draft:[],fx:{year:'',month:'',type:'',q:''},page:0,window:0,metric:6,rankFrom:'',rankTo:'',rankScore:1};
 const flash=(s,error=false)=>{$('#message').textContent=s;$('#message').classList.toggle('warning',error);};
 const apiOrigin='https://caajrctjlxehhofuwhag.supabase.co';
 const publicKey="sb_publishable_9MJ6QZaJ13nfuwYJyLZSmA_WAh0Rret";
@@ -216,19 +216,77 @@ async function drawRequest(method='GET', data){
  }
  return {draws:draws.sort((a,b)=>a.date.localeCompare(b.date)||a.id-b.id)};
 }
+async function readHistory(table,select,access){
+ const all=[];
+ let id=0;
+ for(;;){
+  const rows=await api('/rest/v1/myloto_'+table+'?select='+select+'&order=id.asc&limit=200&id=gt.'+id,{access});
+  if(!rows.length)return all;
+  all.push(...rows);id=rows.at(-1).id;
+ }
+}
+function outcome(date,n){
+ const rows=state.valid.filter(row=>row.date===date);
+ const principal=rows.find(row=>row.type==='Principală');
+ const [m5,m6]=principal?matches(n,principal.n):[null,null];
+ const extra=rows.filter(row=>row.type==='Suplimentară').map(row=>matches(n,row.n).join(' / '));
+ return {m5,m6,status:principal?'Evaluată':'În așteptarea rezultatului',notes:extra.length?'Suplimentară · '+extra.join(', '):''};
+}
 async function refresh(){
  try{
  const {draws}=await drawRequest();
  if(!draws.length){saveSession(null);throw Error('Acest cont nu are acces la MyLoto.');}
  Object.assign(state,validate(draws),{drawsSynced:true});render();
+ try{
+ const access=await token();
+ const [predictions,tickets,tests]=await Promise.all([
+  readHistory('predictions','id,date,algorithm,n,version,created_at',access),
+  readHistory('tickets','id,date,n,created_at',access),
+  readHistory('backtests','id,result,created_at',access)
+ ]);
+ state.predictions=predictions.map(p=>({...p,...outcome(p.date,p.n),id:p.algorithm}));
+ state.tickets=tickets.map(t=>({...t,...outcome(t.date,t.n)}));
+ state.saved=tests.slice().reverse().map(t=>({key:t.id,data:t.result,at:t.created_at.slice(0,10)}));
+ state.historySynced=true;render();
+ }catch(e){state.historySynced=false;render();flash('Istoricul MyLoto nu a putut fi încărcat. '+e.message,true);}
  return true;
- }catch(e){state.drawsSynced=false;render();flash(e.message,true);return false;}
+ }catch(e){state.drawsSynced=false;state.historySynced=false;render();flash(e.message,true);return false;}
 }
 async function write(action,data){
- if(action!=='addDraw'||!state.drawsSynced)throw Error('Salvarea necesită autentificare în MyLoto.');
+ if(!state.drawsSynced)throw Error('Salvarea necesită autentificare în MyLoto.');
+ if(action==='addDraw'){
  await drawRequest('POST',data);
  if(!await refresh())throw Error('Extragerea a fost salvată. Recitirea a eșuat.');
- flash('Extragerea a fost salvată și verificată.');
+ if(state.historySynced)flash('Extragerea a fost salvată și verificată.');
+ return;
+ }
+ if(!state.historySynced)throw Error('Actualizează datele și încearcă din nou.');
+ if(action==='evaluate'){
+ if(!await refresh()||!state.historySynced)throw Error('Evaluarea nu a putut fi actualizată.');
+ const p=state.predictions.filter(x=>x.m6!==null).length,t=state.tickets.filter(x=>x.m6!==null).length;
+ flash(p+t?'Evaluate: '+p+' predicții și '+t+' bilete.':'Nicio combinație salvată cu rezultat principal disponibil.');
+ return;
+ }
+ const access=await token();
+ let path,body,message;
+ if(action==='savePredictions'){
+ if(data.date<=today())throw Error('Predicțiile se salvează până în ziua anterioară extragerii.');
+ const existing=new Set(state.predictions.filter(p=>p.date===data.date).map(p=>p.id));
+ body=data.items.filter(p=>!existing.has(p.id)).map(p=>({date:data.date,algorithm:p.id,n:p.n,version:p.version,seed:p.seed}));
+ if(!body.length){flash('Predicțiile pentru acești algoritmi sunt deja salvate.');return;}
+ path='predictions';message='Predicțiile au fost salvate în Supabase.';
+ }
+ if(action==='saveTicket'){
+ const n=data.n.trim().split(/[ ,;]+/).map(Number);
+ if(!data.date||n.length!==5||new Set(n).size!==5||n.some(x=>!Number.isInteger(x)||x<1||x>40))throw Error('Alege data și introdu cinci numere distincte între 1 și 40.');
+ path='tickets';body={date:data.date,n};message='Biletul a fost salvat în Supabase.';
+ }
+ if(action==='saveBacktest'){path='backtests';body={result:data};message='Backtesting-ul a fost salvat în Supabase.';}
+ if(!path)throw Error('Operațiune indisponibilă.');
+ try{await api('/rest/v1/myloto_'+path,{method:'POST',access,body});}
+ catch(e){if(e.code==='23505')throw Error('Combinația este deja salvată. Actualizează datele.');throw e;}
+ if(!await refresh()||!state.historySynced)throw Error('Datele au fost salvate, dar istoricul nu a putut fi recitit.');
+ flash(message);
 }
 const supported=()=>methods.filter(m=>m.id==='A00'||state.active[m.id]);
 const last=()=>state.valid.at(-1);
@@ -255,9 +313,10 @@ function home(){
  (state.excluded.length?card('<h2>Extrageri excluse</h2>'+table(['ID','Data','Motiv'],state.excluded.map(r=>[esc(r.id),fmt(r.date),esc(r.reason)]))):'')+'</div>';
 }
 function predictions(){
- return header('Predicții','Poți genera inclusiv pentru azi. Predicțiile experimentale se salvează până în ziua anterioară extragerii.')+'<div class="stack">'+card('<form class="actions" id="generate" novalidate><label>Data extragerii<input type="date" name="date" min="'+today()+'" value="'+esc(state.target||official()||today())+'" required></label><label>Algoritm<select name="algorithm"><option value="all">Toți algoritmii activi</option>'+supported().map(m=>'<option value="'+m.id+'" '+(state.algorithm===m.id?'selected':'')+'>'+m.id+' · '+m.name+'</option>').join('')+'</select></label><button type="button" class="primary" data-action="generate">Generează</button><button type="button" data-action="evaluate" '+(!state.sync?'disabled':'')+'>Evaluează predicțiile</button></form>')+
- (state.draft.length?card('<div id="generated" tabindex="-1" class="listline"><h2>Combinații pentru '+fmt(state.target)+'</h2><button data-action="saveP" '+(!state.sync||state.target<=today()?'disabled':'')+'>Salvează în Sheets</button></div>'+(state.target===today()?'<p class="muted">Combinație pentru azi, fără înregistrare în experiment.</p>':'')+table(['Algoritm','Combinație'],state.draft.map(p=>[p.id,balls(p.n)]))):'')+
- card('<h2>Istoric</h2>'+table(['Data','Algoritm','Combinație','Status','5 / 6','Observații'],state.predictions.slice().reverse().map(p=>[fmt(p.date),esc(p.id),balls(p.n),esc(p.status),esc(p.m5??'—')+' / '+esc(p.m6??'—'),esc(p.notes)])))+'</div>';
+ return header('Predicții','Poți genera inclusiv pentru azi. Predicțiile experimentale se salvează până în ziua anterioară extragerii.')+'<div class="stack">'+card('<form class="actions" id="generate" novalidate><label>Data extragerii<input type="date" name="date" min="'+today()+'" value="'+esc(state.target||official()||today())+'" required></label><label>Algoritm<select name="algorithm"><option value="all">Toți algoritmii activi</option>'+supported().map(m=>'<option value="'+m.id+'" '+(state.algorithm===m.id?'selected':'')+'>'+m.id+' · '+m.name+'</option>').join('')+'</select></label><button type="button" class="primary" data-action="generate">Generează</button><button type="button" data-action="evaluate" '+(!state.historySynced?'disabled':'')+'>Evaluează predicțiile</button></form>')+
+ (state.draft.length?card('<div id="generated" tabindex="-1" class="listline"><h2>Combinații pentru '+fmt(state.target)+'</h2><button data-action="saveP" '+(!state.historySynced||state.target<=today()?'disabled':'')+'>Salvează în Supabase</button></div>'+(state.target===today()?'<p class="muted">Combinație pentru azi, fără înregistrare în experiment.</p>':'')+table(['Algoritm','Combinație'],state.draft.map(p=>[p.id,balls(p.n)]))):'')+
+ card('<h2>Bilete jucate</h2><form id="saveTicket" class="actions"><label>Data extragerii<input type="date" name="date" value="'+esc(last()?.date||today())+'" required></label><label>Cele cinci numere<input name="n" inputmode="text" placeholder="Ex. 1, 4, 5, 7, 9" required></label><button '+(!state.historySynced?'disabled':'')+'>Salvează biletul</button></form>'+(state.tickets.length?table(['Data','Combinație','Status','5 / 6','Observații'],state.tickets.slice().reverse().map(t=>[fmt(t.date),balls(t.n),esc(t.status),esc(t.m5??'—')+' / '+esc(t.m6??'—'),esc(t.notes)])):'<p class="muted">Poți salva și bilete din extrageri trecute.</p>'))+
+ card('<h2>Istoric predicții</h2>'+table(['Data','Algoritm','Combinație','Status','5 / 6','Observații'],state.predictions.slice().reverse().map(p=>[fmt(p.date),esc(p.id),balls(p.n),esc(p.status),esc(p.m5??'—')+' / '+esc(p.m6??'—'),esc(p.notes)])))+'</div>';
 }
 function draws(){
  const f=state.fx,n=f.q.trim().split(/[ ,]+/).filter(Boolean).map(Number);
@@ -294,8 +353,8 @@ function evolution(result){
 function testing(){
  const days=group(state.valid),start=days.find(d=>d.date>='2026-05-14')?.date||'',cal=days.find(d=>d.date>='2025-10-19')?.date||'',end=last()?.date||'',r=state.result;
  return header('Backtesting','Walk-forward cu fereastră de test fixată înainte de evaluare.')+'<div class="stack">'+card('<p>Antrenare inițială din '+fmt(days[0]?.date)+'; fereastră de calibrare din '+fmt(cal)+'; test din '+fmt(start)+'. Parametrii sunt fixați. Modelele se reantrenează numai cu zile anterioare.</p><form id="test" class="stack" style="margin-top:12px"><div class="actions"><label>De la<input name="from" type="date" min="'+start+'" max="'+end+'" value="'+esc(state.testFrom||start)+'" required></label><label>Până la<input name="to" type="date" min="'+start+'" max="'+end+'" value="'+esc(state.testTo||end)+'" required></label><button class="primary" '+(state.busy?'disabled':'')+'>Rulează testele</button></div><div class="chips">'+methods.map(m=>'<label><input name="codes" type="checkbox" value="'+m.id+'" '+((state.testCodes||supported().map(m=>m.id)).includes(m.id)?'checked':'')+' '+(m.id==='A00'?'disabled':'')+'>'+m.id+'</label>').join('')+'</div><progress id="progress" max="100" value="'+(state.progress||0)+'" '+(!state.busy?'hidden':'')+'></progress></form>')+
- (r?card('<div class="listline"><h2>'+fmt(r.from)+' – '+fmt(r.to)+'</h2><button data-action="saveB" '+(!state.sync?'disabled':'')+'>Salvează în Sheets</button></div><p>'+r.simulations.toLocaleString('ro-RO')+' simulări uniforme · seed '+r.seed+' · interval A00 95% '+r.bands.map(a=>a.map(x=>dec(x)).join('–')).join(' / ')+'</p>'+evolution(r)+summary(r)):'')+
- (state.saved.length?card('<h2>Teste salvate</h2>'+table(['Data execuției','Interval','Metode'],state.saved.map(x=>[esc(x.at),fmt(x.data.from)+' – '+fmt(x.data.to),x.data.results.length]))):'')+'</div>';
+ (r?card('<div class="listline"><h2>'+fmt(r.from)+' – '+fmt(r.to)+'</h2><button data-action="saveB" '+(!state.historySynced?'disabled':'')+'>Salvează în Supabase</button></div><p>'+r.simulations.toLocaleString('ro-RO')+' simulări uniforme · seed '+r.seed+' · interval A00 95% '+r.bands.map(a=>a.map(x=>dec(x)).join('–')).join(' / ')+'</p>'+evolution(r)+summary(r)):'')+
+ (state.saved.length?card('<h2>Teste salvate</h2>'+table(['Data execuției','Interval','Metode',''],state.saved.map(x=>[esc(x.at),fmt(x.data.from)+' – '+fmt(x.data.to),x.data.results.length,'<button data-action="openB" data-key="'+x.key+'">Deschide</button>']))):'')+'</div>';
 }
 function realRanks(from='',to='9999-12-31'){
  const a=state.predictions.filter(p=>p.status==='Evaluată'&&p.date>=from&&p.date<=to);
@@ -334,15 +393,16 @@ document.addEventListener('click',async e=>{
  if(a==='logout'){
  const access=session?.access_token;
  saveSession(null);
- state.valid=[];state.excluded=[];state.drawsSynced=false;state.draft=[];state.result=null;state.tab=0;
+ state.valid=[];state.excluded=[];state.drawsSynced=false;state.draft=[];state.result=null;state.predictions=[];state.tickets=[];state.saved=[];state.historySynced=false;state.tab=0;
  render();flash('');
  if(access)await api('/auth/v1/logout?scope=local',{method:'POST',access}).catch(()=>{});
  }
  if(a==='refresh')await refresh();
  if(a==='prev'||a==='next'){state.page+=a==='next'?1:-1;render();}
  if(a==='saveP'){b.disabled=true;await write('savePredictions',{date:state.target,items:state.draft});state.draft=[];render();}
- if(a==='evaluate')await write('evaluate',{});
+ if(a==='evaluate'){b.disabled=true;await write('evaluate',{});}
  if(a==='saveB'){b.disabled=true;await write('saveBacktest',state.result);}
+ if(a==='openB'){const item=state.saved.find(x=>x.key===Number(b.dataset.key));if(item){state.result=item.data;render();}}
  }catch(err){flash(err.message,true);if(a==='generate')$('#message').scrollIntoView({block:'center'});else render();}
 });
 document.addEventListener('change',async e=>{
@@ -366,6 +426,7 @@ document.addEventListener('submit',async e=>{
  finally{button.disabled=false;}
  }
  if(id==='generate')generate(e.target);
+ if(id==='saveTicket'){const button=e.target.querySelector('button');button.disabled=true;try{await write('saveTicket',data);}finally{button.disabled=!state.historySynced;}}
  if(id==='nextForm')await write('setNext',data);
  if(id==='addDraw'){const button=e.target.querySelector('button');button.disabled=true;try{await write('addDraw',{...data,n:data.n.trim().split(/[ ,]+/).map(Number)});}finally{button.disabled=!state.drawsSynced;}}
  if(id==='test'){
