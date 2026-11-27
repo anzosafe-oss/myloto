@@ -1,7 +1,65 @@
 <!doctype html>
 <html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#131920"><meta name="apple-mobile-web-app-title" content="MyLoto"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="./icons/dark-180.png" id="ios-icon"><title>MyLoto · Experimental Lab</title><style>
 :root{color-scheme:dark;--bg:#101419;--surface:#171e25;--panel:#1d2630;--line:#2b3744;--text:#edf2f7;--muted:#a8b7c7;--accent:#aee88a;--ink:#152514;--warn:#f0c77a}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px system-ui,sans-serif}header{position:sticky;top:0;z-index:4;background:#131920;border-bottom:1px solid var(--line)}.top,.nav,main,footer{max-width:1240px;margin:auto;padding-inline:clamp(12px,3vw,36px)}.top{display:flex;align-items:center;justify-content:space-between;padding-block:14px;gap:10px}.logo{display:flex;align-items:center;gap:12px}.mark{display:grid;place-items:center;border-radius:12px;background:var(--accent);color:var(--ink);width:40px;height:40px;font-size:18px;font-weight:850}.brand{font-size:21px;font-weight:750}.subtitle,.eyebrow,small,.muted{color:var(--muted)}.subtitle{font-size:12px}.nav{display:flex;gap:6px;overflow:auto;scrollbar-width:thin;padding-bottom:8px}button,input,select{font:inherit;border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--text);padding:9px 12px;min-height:41px}button{cursor:pointer;font-weight:650}button:hover:not(:disabled){border-color:var(--accent)}button:disabled{opacity:.45;cursor:default}.nav button{white-space:nowrap;background:transparent;border-color:transparent}.nav button[aria-current="page"]{color:var(--accent);background:#26352b}.primary{background:var(--accent);color:var(--ink);border-color:transparent}input[type=checkbox]{min-height:auto;accent-color:var(--accent)}main{padding-block:26px;min-height:65vh}footer{padding-block:20px;border-top:1px solid var(--line);color:var(--muted)}h1,h2,h3,p{margin:0}h1{font-size:clamp(29px,5vw,46px);letter-spacing:-.045em}h2{font-size:20px}h3{font-size:16px}p{line-height:1.5}.intro{margin-bottom:20px}.intro p{margin-top:7px;color:var(--muted)}.stack{display:grid;gap:15px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr));gap:12px}.wide{grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr))}.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}.hero{background:linear-gradient(115deg,#25352d 0%,#171e25 80%)}.hero .balls{margin:18px 0}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.metric{font-size:24px;font-weight:750;margin-top:5px}.actions{display:flex;align-items:end;flex-wrap:wrap;gap:8px}.actions label{display:grid;gap:4px;max-width:100%}input,select{max-width:100%;min-width:0}label{color:var(--muted)}.balls{display:inline-flex;gap:5px;flex-wrap:wrap;vertical-align:middle}.ball{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#2f4336;color:#dbf4d7;border:1px solid #55785d;font-weight:750;font-variant-numeric:tabular-nums}.ball:nth-child(6){background:#344257;border-color:#6583a1;color:#e5f1ff}.banner{margin-bottom:14px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;color:var(--muted)}.warning{color:var(--warn)}.scroll{overflow:auto}.scroll table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap;font-variant-numeric:tabular-nums}th,td{padding:9px 10px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:650}.chart{display:flex;align-items:end;gap:2px;height:146px;margin:10px 0;min-width:510px}.chart button{height:var(--h);min-height:2px;flex:1;padding:0;position:relative;border:0;border-radius:3px;background:#72af78;margin-bottom:19px}.chart button span{position:absolute;bottom:-19px;left:50%;transform:translateX(-50%);font-size:9px;font-weight:normal}.matrix{display:grid;grid-template-columns:repeat(40,14px);width:max-content;margin:10px 0}.matrix button{width:14px;height:14px;min-height:0;padding:0;border-radius:0;border:1px solid #121c20;background:rgb(calc(25 + var(--v)*110) calc(40 + var(--v)*170) calc(44 + var(--v)*80))}.listline{display:flex;justify-content:space-between;align-items:center;gap:8px}.chips{display:flex;gap:8px;flex-wrap:wrap}.chips label{display:flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:8px;padding:5px 8px}progress{width:100%;accent-color:var(--accent)}a{color:var(--accent)}details{margin-top:10px}summary{cursor:pointer}svg{width:100%;min-width:340px;height:200px}fieldset{border:1px solid var(--line);border-radius:10px}#message:empty{display:none}@media(max-width:550px){.top{align-items:start}.top small{max-width:125px;text-align:right}.card{padding:12px}.actions>*{min-width:0}.nav{gap:0}.nav button{padding:7px 10px}.ball{width:27px;height:27px}}
-header{padding-top:env(safe-area-inset-top)}footer{padding-bottom:max(20px,env(safe-area-inset-bottom))}[hidden]{display:none!important}</style></head><body><header><div class="top"><div class="logo"><img class="mark" src="./icons/favicon-64.png" width="40" height="40" alt=""><div><div class="brand">MyLoto</div><div class="subtitle">Experimental Lab</div></div></div><div class="actions"><small id="connection"></small><button id="logout" data-action="logout" hidden>Ieși</button></div></div><nav class="nav" id="nav" aria-label="Navigare"></nav></header><main><div id="message" class="banner" role="status"></div><div id="root"></div></main><footer>MyLoto v1.0.3 · Europe/Bucharest</footer><script>
+header{padding-top:env(safe-area-inset-top)}footer{padding-bottom:max(20px,env(safe-area-inset-bottom))}[hidden]{display:none!important}
+:root{--safe-top:env(safe-area-inset-top,0px);--safe-bottom:env(safe-area-inset-bottom,0px);--header-height:116px}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;overscroll-behavior-y:contain}
+body{padding-top:calc(var(--header-height) + var(--safe-top));overflow-wrap:anywhere}
+header{position:fixed;inset:0 0 auto;height:calc(var(--header-height) + var(--safe-top));z-index:10}
+body:not(.signed-in){--header-height:68px}
+.top{height:68px;padding-block:0;align-items:center}
+.nav{overflow:visible}
+#mobileNav{display:none}
+#refreshIndicator{position:fixed;left:50%;top:calc(var(--header-height) + var(--safe-top) + 7px);transform:translateX(-50%);z-index:13;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:8px 14px;white-space:nowrap;box-shadow:0 4px 16px #0007;font-size:13px}
+input:not([type=checkbox]),select,textarea{font-size:16px}
+#root,.scroll,.stack,.grid{min-width:0}
+.draw-list{list-style:none;padding:0;margin:12px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,265px),1fr));gap:8px}
+.draw-item{padding:10px 12px;border:1px solid var(--line);border-radius:11px;background:var(--panel);min-width:0}
+.draw-meta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px 8px;margin-bottom:7px}
+.draw-meta time{font-weight:700;font-variant-numeric:tabular-nums}
+.draw-item .balls{gap:6px}
+.draw-source{font-size:12px}
+.draw-pages{display:flex;align-items:center;gap:6px}
+.draw-pages button{padding:6px 10px}
+#addDraw .confirm-draw{display:flex;align-items:center;gap:8px;align-self:center}
+@media(max-width:760px){
+ :root,body:not(.signed-in){--header-height:58px;--bottom-nav-height:62px}
+ .top{height:58px;padding-inline:max(14px,env(safe-area-inset-left)) max(14px,env(safe-area-inset-right))}
+ .top .mark{width:36px;height:36px}.top .brand{font-size:19px}
+ #nav{display:none}
+ main{padding-block:16px;min-width:0}
+ .card{padding:12px}
+ .intro{margin-bottom:14px}.intro p{margin-top:4px;font-size:14px}
+ .stack{gap:10px}.grid{gap:8px}
+ .actions label{flex:1 1 130px;min-width:0}
+ .actions input:not([type=checkbox]),.actions select{width:100%;min-width:0}
+ .actions input[type=date]{display:block;-webkit-appearance:none;appearance:none;text-align:left}
+ .actions input[type=date]::-webkit-date-and-time-value{text-align:left}
+ #filter label,#addDraw label{flex-basis:calc(50% - 8px)}
+ #addDraw label:nth-child(3),#addDraw label:nth-child(4),#addDraw .confirm-draw{flex-basis:100%}
+ #filter>button,#addDraw>button{width:100%}
+ .draw-list{grid-template-columns:1fr}
+ .draw-item .ball{width:31px;height:31px}
+ .draw-list-title{font-size:17px}
+ .draw-pages button{min-width:40px}
+ body.signed-in footer{padding-bottom:calc(var(--bottom-nav-height) + var(--safe-bottom) + 18px)}
+ #mobileNav{display:block;position:fixed;inset:auto 0 0;z-index:11;background:#131920;border-top:1px solid var(--line);padding-bottom:var(--safe-bottom)}
+ .bottom-tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));min-height:var(--bottom-nav-height);max-width:580px;margin:auto;padding:4px max(5px,env(safe-area-inset-right)) 4px max(5px,env(safe-area-inset-left))}
+ .bottom-tabs button{padding:3px 1px;min-width:0;display:grid;place-content:center;justify-items:center;gap:3px;background:transparent;border-color:transparent;font-size:11px;color:var(--muted);white-space:nowrap}
+ .tab-icon{width:21px;height:21px;min-width:0;margin:0;display:block}
+ .bottom-tabs button[aria-current=page],.bottom-tabs button[aria-expanded=true],.bottom-tabs .subactive{color:var(--accent);background:#24352a}
+ .more-tabs{max-width:580px;margin:auto;padding:8px 12px;border-bottom:1px solid var(--line);display:grid;gap:6px;background:var(--surface)}
+ .more-tabs button{text-align:left}.more-tabs button[aria-current=page]{color:var(--accent)}
+ .scroll{max-width:100%;overscroll-behavior-inline:contain}
+ .scroll.wide-table table,.scroll.wide-table tbody,.scroll.wide-table tr,.scroll.wide-table td{display:block;white-space:normal}
+ .scroll.wide-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .scroll.wide-table tr{padding:8px 0;border-bottom:1px solid var(--line)}
+ .scroll.wide-table td{border:0;padding:4px 0;display:grid;grid-template-columns:minmax(68px,27%) minmax(0,1fr);gap:8px;align-items:center}
+ .scroll.wide-table td::before{content:attr(data-label);color:var(--muted);font-size:12px}
+ .scroll.wide-table td[data-label=""]::before{content:none}
+ .scroll.wide-table td[data-label=""]{grid-template-columns:1fr}
+}
+</style></head><body><header><div class="top"><div class="logo"><img class="mark" src="./icons/favicon-64.png" width="40" height="40" alt=""><div><div class="brand">MyLoto</div><div class="subtitle">Experimental Lab</div></div></div><div class="actions"><button id="logout" data-action="logout" hidden>Ieși</button></div></div><nav class="nav" id="nav" aria-label="Navigare"></nav></header><div id="refreshIndicator" role="status" hidden></div><main><div id="message" class="banner" role="status"></div><div id="root"></div></main><footer>MyLoto v1.0.4</footer><nav id="mobileNav" aria-label="Navigare mobilă" hidden></nav><script>
 const numbers=Array.from({length:40},(_,i)=>i+1), seed=4052026;
 const methods=[
 ['Aleatoriu uniform','Eșantion uniform fără înlocuire.','Seed 4052026 + data'],
@@ -167,7 +225,7 @@ const fmt=d=>d?d.split('-').reverse().join('.'):'—';
 const today=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Bucharest'}).format(new Date());
 const dec=(x,k=3)=>x==null?'—':x.toFixed(k);
 const balls=a=>'<span class="balls">'+a.map(n=>'<span class="ball">'+esc(n)+'</span>').join('')+'</span>';
-const table=(head,body)=>'<div class="scroll"><table><thead><tr>'+head.map(x=>'<th scope="col">'+x+'</th>').join('')+'</tr></thead><tbody>'+body.map(row=>'<tr>'+row.map(x=>'<td>'+x+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
+const table=(head,body)=>'<div class="scroll'+(head.length>=4?' wide-table':'')+'"><table><thead><tr>'+head.map(x=>'<th scope="col">'+x+'</th>').join('')+'</tr></thead><tbody>'+body.map(row=>'<tr>'+row.map((x,i)=>'<td data-label="'+esc(head[i])+'">'+x+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
 const init=validate(snapshot.draws);
 let state={...init,predictions:snapshot.predictions,active:Object.fromEntries(methods.map(m=>[m.id,true])),saved:[],tickets:[],historySynced:false,next:snapshot.next||'',sync:false,drawsSynced:false,tab:0,result:snapshot.result||null,busy:false,draft:[],fx:{year:'',month:'',type:'',q:''},page:0,window:0,metric:6,rankFrom:'',rankTo:'',rankScore:1};
 const flash=(s,error=false)=>{$('#message').textContent=s;$('#message').classList.toggle('warning',error);};
@@ -295,10 +353,26 @@ const legend=x=>'<div class="eyebrow">'+x+'</div>';
 const metric=(name,value)=>'<article class="card">'+legend(name)+'<div class="metric">'+esc(value)+'</div></article>';
 const card=x=>'<section class="card">'+x+'</section>';
 function header(name,description){return '<div class="intro"><h1>'+name+'</h1><p>'+description+'</p></div>';}
+const tabPaths=[
+ 'M3 11l9-8 9 8v9h-6v-6H9v6H3z',
+ 'M12 2v4m0 12v4M2 12h4m12 0h4M12 7a5 5 0 100 10 5 5 0 000-10z',
+ 'M4 6h16M4 12h16M4 18h16',
+ 'M4 20V12m5 8V5m6 15V9m5 11V3',
+ 'M4 12h2m5 0h2m5 0h2'
+];
+function renderMobileNav(){
+ const nav=$('#mobileNav');
+ nav.hidden=!session;
+ if(!session)return;
+ const icon=(i)=>'<svg class="tab-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"><path d="'+tabPaths[i]+'"/></svg>';
+ const tab=(i,glyph='')=>'<button data-tab="'+i+'" '+(i===state.tab?'aria-current="page"':'')+'>'+glyph+'<span>'+tabs[i]+'</span></button>';
+ nav.innerHTML='<div class="more-tabs" id="moreTabs" '+(state.more?'':'hidden')+'>'+[4,5,6].map(i=>tab(i)).join('')+'</div><div class="bottom-tabs">'+[0,1,2,3].map(i=>tab(i,icon(i))).join('')+'<button data-action="more" aria-controls="moreTabs" aria-expanded="'+!!state.more+'" class="'+(state.tab>=4?'subactive':'')+'">'+icon(4)+'<span>Mai multe</span></button></div>';
+}
 function render(){
- $('#connection').textContent=state.drawsSynced?'Supabase · conectat':'MyLoto · acces privat';
+ document.body.classList.toggle('signed-in',!!session);
  $('#nav').innerHTML=tabs.map((n,i)=>'<button data-tab="'+i+'" '+(i===state.tab?'aria-current="page"':'')+'>'+n+'</button>').join('');
  $('#nav').hidden=!session;
+ renderMobileNav();
  $('#logout').hidden=!session;
  if(!session){root.innerHTML=header('Autentificare MyLoto','Folosește contul Supabase autorizat pentru MyLoto.')+card('<form id="login" class="actions"><label>E-mail<input name="email" type="email" autocomplete="username" required></label><label>Parolă<input name="password" type="password" autocomplete="current-password" required></label><button class="primary">Intră în MyLoto</button></form>');return;}
  root.innerHTML=[home,predictions,draws,stats,algorithms,testing,ranking][state.tab]();
@@ -322,8 +396,13 @@ function draws(){
  const f=state.fx,n=f.q.trim().split(/[ ,]+/).filter(Boolean).map(Number);
  const a=state.valid.slice().reverse().filter(r=>(!f.year||r.date.startsWith(f.year))&&(!f.month||r.date.slice(5,7)===f.month)&&(!f.type||r.type===f.type)&&n.every(x=>r.n.includes(x)));
  const options=(values,current)=>'<option value="">Toate</option>'+values.map(x=>'<option '+(current===x?'selected':'')+'>'+x+'</option>').join('');
- return header('Extrageri','Rezultatele istorice, cu numerele în ordinea publicată.')+'<div class="stack">'+card('<form id="filter" class="actions"><label>An<select name="year">'+options([...new Set(state.valid.map(r=>r.date.slice(0,4)))].reverse(),f.year)+'</select></label><label>Lună<select name="month">'+options(Array.from({length:12},(_,i)=>String(i+1).padStart(2,'0')),f.month)+'</select></label><label>Tip<select name="type">'+options(['Principală','Suplimentară'],f.type)+'</select></label><label>Numere<input name="q" value="'+esc(f.q)+'" placeholder="Ex. 7, 24"></label><button>Filtrează</button></form><details><summary>Adaugă rezultat verificat manual</summary><form id="addDraw" class="actions"><label>Data<input name="date" type="date" required></label><label>Tip<select name="type"><option>Principală</option><option>Suplimentară</option></select></label><label>Cele șase numere în ordine<input name="n" required></label><label>Link Loteria Română<input name="source" type="url" required></label><label><span>Am confruntat rezultatul</span><input name="confirmed" type="checkbox" required></label><button '+(!state.drawsSynced?'disabled':'')+'>Adaugă</button></form></details>')+
- card('<div class="listline"><h2>'+a.length+' rezultate</h2><div><button data-action="prev" '+(!state.page?'disabled':'')+'>‹</button> <button data-action="next" '+((state.page+1)*30>=a.length?'disabled':'')+'>›</button></div></div>'+table(['Data','Tip','Numere','Sursă'],a.slice(state.page*30,state.page*30+30).map(r=>[fmt(r.date),esc(r.type),balls(r.n),esc(r.source)])))+'</div>';
+ return header('Extrageri','Rezultatele istorice, cu numerele în ordinea publicată.')+'<div class="stack">'+card('<form id="filter" class="actions"><label>An<select name="year">'+options([...new Set(state.valid.map(r=>r.date.slice(0,4)))].reverse(),f.year)+'</select></label><label>Lună<select name="month">'+options(Array.from({length:12},(_,i)=>String(i+1).padStart(2,'0')),f.month)+'</select></label><label>Tip<select name="type">'+options(['Principală','Suplimentară'],f.type)+'</select></label><label>Numere<input name="q" value="'+esc(f.q)+'" placeholder="Ex. 7, 24"></label><button>Filtrează</button></form><details><summary>Adaugă rezultat verificat manual</summary><form id="addDraw" class="actions"><label>Data<input name="date" type="date" required></label><label>Tip<select name="type"><option>Principală</option><option>Suplimentară</option></select></label><label>Cele șase numere în ordine<input name="n" required></label><label>Link Loteria Română<input name="source" type="url" required></label><label class="confirm-draw"><input name="confirmed" type="checkbox" required><span>Am confruntat rezultatul</span></label><button '+(!state.drawsSynced?'disabled':'')+'>Adaugă</button></form></details>')+
+ card('<div class="listline"><h2 class="draw-list-title">'+a.length+' rezultate</h2><div class="draw-pages"><button aria-label="Pagina anterioară" data-action="prev" '+(!state.page?'disabled':'')+'>‹</button><small>'+(a.length?state.page+1:0)+' / '+Math.ceil(a.length/30)+'</small><button aria-label="Pagina următoare" data-action="next" '+((state.page+1)*30>=a.length?'disabled':'')+'>›</button></div></div>'+
+ (a.length?'<ul class="draw-list">'+a.slice(state.page*30,state.page*30+30).map(r=>{
+ let source='';
+ try{const link=new URL(r.source);if(link.protocol==='https:'&&['loto.ro','www.loto.ro'].includes(link.hostname))source='<a class="draw-source" href="'+esc(link.href)+'" target="_blank" rel="noopener noreferrer">Sursă</a>';}catch{}
+ return '<li class="draw-item"><div class="draw-meta"><time datetime="'+esc(r.date)+'">'+fmt(r.date)+'</time><small>'+esc(r.type)+'</small>'+source+'</div>'+balls(r.n)+'</li>';
+ }).join('')+'</ul>':'<p class="muted">Nu există extrageri pentru filtrele alese.</p>'))+'</div>';
 }
 function stats(){
  const filtered=state.window?state.valid.slice(-state.window):state.valid, rows=filtered.map(r=>({...r,n:r.n.slice(0,state.metric)})),f=counts(rows), g=gaps(rows);
@@ -385,10 +464,11 @@ function generate(form){
 }
 document.addEventListener('click',async e=>{
  const b=e.target.closest('button,[data-info]');if(!b)return;
- if(b.dataset.tab!==undefined){state.tab=+b.dataset.tab;flash('');render();return;}
+ if(b.dataset.tab!==undefined){state.tab=+b.dataset.tab;state.more=false;flash('');render();window.scrollTo(0,0);return;}
  if(b.dataset.info){const target=b.closest('.matrix')?$('#heatInfo'):b.closest('svg')?$('#evoInfo'):$('#chartInfo');if(target)target.textContent=b.dataset.info;return;}
  const a=b.dataset.action;if(!a)return;
  try{
+ if(a==='more'){state.more=!state.more;renderMobileNav();$('#mobileNav [data-action=more]')?.focus();return;}
  if(a==='generate')generate($('#generate'));
  if(a==='logout'){
  const access=session?.access_token;
@@ -397,7 +477,7 @@ document.addEventListener('click',async e=>{
  render();flash('');
  if(access)await api('/auth/v1/logout?scope=local',{method:'POST',access}).catch(()=>{});
  }
- if(a==='refresh')await refresh();
+ if(a==='refresh')await refreshData();
  if(a==='prev'||a==='next'){state.page+=a==='next'?1:-1;render();}
  if(a==='saveP'){b.disabled=true;await write('savePredictions',{date:state.target,items:state.draft});state.draft=[];render();}
  if(a==='evaluate'){b.disabled=true;await write('evaluate',{});}
@@ -443,20 +523,39 @@ function updateInstallIcon(){
 }
 updateInstallIcon();
 iconTheme.addEventListener('change',updateInstallIcon);
-let pullStart=null;
+let pullStart=null,pullDistance=0;
+function indicator(message=''){
+ const node=$('#refreshIndicator');node.textContent=message;node.hidden=!message;
+}
+async function refreshData(){
+ if(!session||state.refreshing||state.busy)return;
+ state.refreshing=true;indicator('Se actualizează…');
+ try{if(await refresh()&&state.historySynced)flash('Date actualizate.');}
+ finally{state.refreshing=false;indicator();}
+}
+function resetPull(){
+ pullStart=null;pullDistance=0;if(!state.refreshing)indicator();
+}
 document.addEventListener('touchstart',e=>{
- pullStart=window.scrollY===0&&e.touches.length===1&&!e.target.closest('input,select,textarea,.scroll,nav')
-  ? {x:e.touches[0].clientX,y:e.touches[0].clientY}:null;
+ resetPull();
+ if(!session||state.refreshing||state.busy||window.scrollY>1||e.touches.length!==1)return;
+ if(e.target.closest('input,select,textarea,button,a,.scroll,nav'))return;
+ pullStart={x:e.touches[0].clientX,y:e.touches[0].clientY};
 },{passive:true});
-document.addEventListener('touchcancel',()=>{pullStart=null;},{passive:true});
-document.addEventListener('touchend',async e=>{
- const start=pullStart;pullStart=null;
- const touch=e.changedTouches[0];
- if(!start||!touch||window.scrollY!==0||state.busy||state.refreshing||
-    touch.clientY-start.y<75||Math.abs(touch.clientX-start.x)>35)return;
- state.refreshing=true;
- try{flash('Actualizez extragerile…');if(await refresh())flash('Extragerile sunt actualizate.');}
- finally{state.refreshing=false;}
+document.addEventListener('touchmove',e=>{
+ if(!pullStart)return;
+ if(e.touches.length!==1||window.scrollY>1){resetPull();return;}
+ const dx=e.touches[0].clientX-pullStart.x,dy=e.touches[0].clientY-pullStart.y;
+ if(dy<0||Math.abs(dx)>Math.max(10,dy)){resetPull();return;}
+ if(dy>12||pullDistance){
+  pullDistance=dy;if(e.cancelable)e.preventDefault();
+  indicator(dy>=80?'Eliberează pentru actualizare':'Trage în jos pentru actualizare');
+ }
+},{passive:false});
+document.addEventListener('touchend',()=>{
+ const ready=pullDistance>=80;
+ resetPull();if(ready)refreshData();
 },{passive:true});
+document.addEventListener('touchcancel',resetPull,{passive:true});
 render();if(session)refresh();
 </script></body></html>
