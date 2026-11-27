@@ -332,7 +332,7 @@ async function write(action,data){
  if(action==='evaluate'){
  if(!await refresh()||!state.historySynced)throw Error('Evaluarea nu a putut fi actualizată.');
  const p=state.predictions.filter(x=>x.m6!==null).length,t=state.tickets.filter(x=>x.m6!==null).length;
- flash(p+t?'Evaluate: '+p+' predicții și '+t+' bilete.':'Nicio combinație salvată cu rezultat principal disponibil.');
+ flash(p+t?'Predicții evaluate: '+p+' · Variante de bilet evaluate: '+t:'Nicio combinație salvată cu rezultat principal disponibil.');
  return;
  }
  const access=await token();
