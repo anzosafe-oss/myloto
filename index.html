@@ -59,7 +59,9 @@ input:not([type=checkbox]),select,textarea{font-size:16px}
  .scroll.wide-table td[data-label=""]::before{content:none}
  .scroll.wide-table td[data-label=""]{grid-template-columns:1fr}
 }
-</style></head><body><header><div class="top"><div class="logo"><img class="mark" src="./icons/favicon-64.png" width="40" height="40" alt=""><div><div class="brand">MyLoto</div><div class="subtitle">Experimental Lab</div></div></div><div class="actions"><button id="logout" data-action="logout" hidden>Ieși</button></div></div><nav class="nav" id="nav" aria-label="Navigare"></nav></header><div id="refreshIndicator" role="status" hidden></div><main><div id="message" class="banner" role="status"></div><div id="root"></div></main><footer>MyLoto v1.0.4</footer><nav id="mobileNav" aria-label="Navigare mobilă" hidden></nav><script>
+#refreshToast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:14;width:max-content;max-width:calc(100vw - 32px);padding:10px 16px;border-radius:10px;background:var(--accent);color:var(--ink);font-size:13px;font-weight:700;box-shadow:0 4px 20px #0004}
+@media(max-width:760px){#refreshToast{bottom:calc(var(--bottom-nav-height) + var(--safe-bottom) + 14px)}}
+</style></head><body><header><div class="top"><div class="logo"><img class="mark" src="./icons/favicon-64.png" width="40" height="40" alt=""><div><div class="brand">MyLoto</div><div class="subtitle">Experimental Lab</div></div></div><div class="actions"><button id="logout" data-action="logout" hidden>Ieși</button></div></div><nav class="nav" id="nav" aria-label="Navigare"></nav></header><div id="refreshIndicator" role="status" hidden></div><div id="refreshToast" role="status" hidden></div><main><div id="message" class="banner" role="status"></div><div id="root"></div></main><footer>MyLoto v1.0.5</footer><nav id="mobileNav" aria-label="Navigare mobilă" hidden></nav><script>
 const numbers=Array.from({length:40},(_,i)=>i+1), seed=4052026;
 const methods=[
 ['Aleatoriu uniform','Eșantion uniform fără înlocuire.','Seed 4052026 + data'],
@@ -527,10 +529,18 @@ let pullStart=null,pullDistance=0;
 function indicator(message=''){
  const node=$('#refreshIndicator');node.textContent=message;node.hidden=!message;
 }
+let refreshToastTimer;
+function refreshToast(message=''){
+ clearTimeout(refreshToastTimer);
+ const node=$('#refreshToast');
+ node.textContent=message;node.hidden=!message;
+ if(message)refreshToastTimer=setTimeout(()=>refreshToast(),2000);
+}
 async function refreshData(){
  if(!session||state.refreshing||state.busy)return;
+ refreshToast();flash('');
  state.refreshing=true;indicator('Se actualizează…');
- try{if(await refresh()&&state.historySynced)flash('Date actualizate.');}
+ try{if(await refresh()&&state.historySynced)refreshToast('Actualizat');}
  finally{state.refreshing=false;indicator();}
 }
 function resetPull(){
